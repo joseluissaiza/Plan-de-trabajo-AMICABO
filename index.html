@@ -1,504 +1,538 @@
-ok tambien pondremos los precios de realty lab, que van de - grabacion asesores con poca IA (camara profesional y drone) $5,000. los videos publicitarios narrados con ia videos con IA sin grabar, cuando ellos ya tienen videos y fotos de la propiedad o terreno $6,000. $8,500 cuando se ncesita ir a grabar y tomar foto y video., ella gana el 10% de cada venta. en amicabo solo se genera comision en la venta de videos independientes de 5 mil que tambien es el 10%.. necesito agregar esto a mi pagina que tiene este codigo.. <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan de Trabajo - Asistente</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        * { font-family: 'Inter', sans-serif; }
-        h1, h2, h3, .display { font-family: 'Space Grotesk', sans-serif; }
-        .gradient-text {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        .card-hover {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.2);
-        }
-        .slide {
-            display: none;
-            animation: fadeIn 0.6s ease-out;
-        }
-        .slide.active {
-            display: block;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .progress-bar {
-            transition: width 0.5s ease-out;
-        }
-        .pulse-ring {
-            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-        }
-        @keyframes pulse-ring {
-            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7); }
-            70% { transform: scale(1); box-shadow: 0 0 0 20px rgba(102, 126, 234, 0); }
-            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(102, 126, 234, 0); }
-        }
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .metric-card {
-            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
-        }
-        .checklist-item {
-            transition: all 0.3s ease;
-        }
-        .checklist-item:hover {
-            background: rgba(102, 126, 234, 0.1);
-            padding-left: 1.5rem;
-        }
-        .tab-active {
-            border-bottom: 3px solid #667eea;
-            color: #667eea;
-        }
-        .floating {
-            animation: floating 3s ease-in-out infinite;
-        }
-        @keyframes floating {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de Trabajo - Asistente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .display { font-family: 'Space Grotesk', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.2);
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 0.6s ease-out;
+        }
+        .slide.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .progress-bar {
+            transition: width 0.5s ease-out;
+        }
+        .pulse-ring {
+            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 20px rgba(102, 126, 234, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(102, 126, 234, 0); }
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .metric-card {
+            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+        }
+        .checklist-item {
+            transition: all 0.3s ease;
+        }
+        .checklist-item:hover {
+            background: rgba(102, 126, 234, 0.1);
+            padding-left: 1.5rem;
+        }
+        .tab-active {
+            border-bottom: 3px solid #667eea;
+            color: #667eea;
+        }
+        /* Fix para móviles para evitar overflow horizontal */
+        body { overflow-x: hidden; }
+    </style>
 </head>
-<body class="bg-slate-950 text-white min-h-screen overflow-x-hidden">
-    <nav class="fixed top-0 w-full z-50 glass-effect border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center pulse-ring">
-                        <i data-lucide="zap" class="w-6 h-6 text-white"></i>
-                    </div>
-                    <span class="text-xl font-bold tracking-tight">Plan de Trabajo <span class="gradient-text">Semanal</span></span>
-                </div>
-                <div class="flex space-x-1 bg-slate-900/50 rounded-lg p-1 overflow-x-auto">
-                    <button onclick="showSlide(0)" class="nav-btn px-4 py-2 rounded-md text-sm font-medium transition-all hover:bg-white/10 tab-active whitespace-nowrap" data-slide="0">Resumen</button>
-                    <button onclick="showSlide(1)" class="nav-btn px-4 py-2 rounded-md text-sm font-medium transition-all hover:bg-white/10 whitespace-nowrap" data-slide="1">Amicabo</button>
-                    <button onclick="showSlide(2)" class="nav-btn px-4 py-2 rounded-md text-sm font-medium transition-all hover:bg-white/10 whitespace-nowrap" data-slide="2">RealtyLab</button>
-                    <button onclick="showSlide(3)" class="nav-btn px-4 py-2 rounded-md text-sm font-medium transition-all hover:bg-white/10 whitespace-nowrap" data-slide="3">Agenda</button>
-                    <button onclick="showSlide(4)" class="nav-btn px-4 py-2 rounded-md text-sm font-medium transition-all hover:bg-white/10 whitespace-nowrap" data-slide="4">Mensajes</button>
-                </div>
-            </div>
-        </div>
-    </nav>
+<body class="bg-slate-950 text-white min-h-screen">
+    
+    <nav class="fixed top-0 w-full z-50 glass-effect border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center pulse-ring">
+                        <i data-lucide="zap" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight hidden md:inline">Plan de Trabajo <span class="gradient-text">Semanal</span></span>
+                    <span class="text-xl font-bold tracking-tight md:hidden">Plan <span class="gradient-text">Seman.</span></span>
+                </div>
+                <div class="flex space-x-1 bg-slate-900/50 rounded-lg p-1 overflow-x-auto max-w-[200px] md:max-w-none no-scrollbar">
+                    <button onclick="showSlide(0)" class="nav-btn px-4 py-2 rounded-md text-sm font-medium transition-all hover:bg-white/10 tab-active whitespace-nowrap" data-slide="0">Resumen</button>
+                    <button onclick="showSlide(1)" class="nav-btn px-4 py-2 rounded-md text-sm font-medium transition-all hover:bg-white/10 whitespace-nowrap" data-slide="1">Amicabo</button>
+                    <button onclick="showSlide(2)" class="nav-btn px-4 py-2 rounded-md text-sm font-medium transition-all hover:bg-white/10 whitespace-nowrap" data-slide="2">RealtyLab</button>
+                    <button onclick="showSlide(3)" class="nav-btn px-4 py-2 rounded-md text-sm font-medium transition-all hover:bg-white/10 whitespace-nowrap" data-slide="3">Agenda</button>
+                    <button onclick="showSlide(4)" class="nav-btn px-4 py-2 rounded-md text-sm font-medium transition-all hover:bg-white/10 whitespace-nowrap" data-slide="4">Scripts</button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <main class="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="slide active" id="slide-0">
-            <div class="text-center mb-12">
-                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                    Objetivo Semanal<br>
-                    <span class="gradient-text typing-effect">Generar Citas & Leads</span>
-                </h1>
-                <p class="text-xl text-slate-400 max-w-2xl mx-auto">
-                    Estrategia dual: Amicabo (visibilidad + ventas) + RealtyLab (contenido premium inmobiliario)
-                </p>
-            </div>
+    <main class="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        
+        <div class="slide active" id="slide-0">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-7xl font-bold mb-6 leading-tight">
+                    Objetivo Semanal<br>
+                    <span class="gradient-text typing-effect">Generar Citas & Leads</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">
+                    Estrategia dual: Amicabo (visibilidad + ventas) + RealtyLab (contenido premium inmobiliario)
+                </p>
+            </div>
 
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <div class="metric-card rounded-3xl p-8 card-hover border border-purple-500/20 relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500/20 rounded-full blur-3xl group-hover:bg-purple-500/30 transition-all"></div>
-                    <div class="relative z-10">
-                        <div class="flex items-center justify-between mb-6">
-                            <div class="flex items-center space-x-3">
-                                <div class="w-12 h-12 bg-purple-500/20 rounded-2xl flex items-center justify-center">
-                                    <i data-lucide="video" class="w-6 h-6 text-purple-400"></i>
-                                </div>
-                                <div>
-                                    <h2 class="text-2xl font-bold">Amicabo</h2>
-                                    <p class="text-sm text-slate-400">Medio Digital Los Cabos</p>
-                                </div>
-                            </div>
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs font-semibold">PRINCIPAL</span>
-                        </div>
-                        <div class="space-y-4">
-                            <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
-                                <span class="text-slate-300">Meta Diaria Citas</span>
-                                <span class="text-2xl font-bold text-purple-400">3-5</span>
-                            </div>
-                            <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
-                                <span class="text-slate-300">Contactos Nuevos</span>
-                                <span class="text-2xl font-bold text-purple-400">15-30</span>
-                            </div>
-                            <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
-                                <span class="text-slate-300">Conversaciones</span>
-                                <span class="text-2xl font-bold text-purple-400">10-20</span>
-                            </div>
-                        </div>
-                        <div class="mt-6 pt-6 border-t border-white/10">
-                            <div class="flex items-center justify-between text-sm">
-                                <span class="text-slate-400">Productos:</span>
-                                <div class="flex space-x-2">
-                                    <span class="px-2 py-1 bg-white/10 rounded text-xs">$5k Video</span>
-                                    <span class="px-2 py-1 bg-white/10 rounded text-xs">$10k Mensual</span>
-                                    <span class="px-2 py-1 bg-purple-500/30 rounded text-xs">$50k Premium</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="metric-card rounded-3xl p-8 card-hover border border-purple-500/20 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500/20 rounded-full blur-3xl group-hover:bg-purple-500/30 transition-all"></div>
+                    <div class="relative z-10">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 bg-purple-500/20 rounded-2xl flex items-center justify-center">
+                                    <i data-lucide="video" class="w-6 h-6 text-purple-400"></i>
+                                </div>
+                                <div>
+                                    <h2 class="text-2xl font-bold">Amicabo</h2>
+                                    <p class="text-sm text-slate-400">Medio Digital Los Cabos</p>
+                                </div>
+                            </div>
+                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs font-semibold">PRINCIPAL</span>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
+                                <span class="text-slate-300">Meta Diaria Citas</span>
+                                <span class="text-2xl font-bold text-purple-400">3-5</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
+                                <span class="text-slate-300">Contactos Nuevos</span>
+                                <span class="text-2xl font-bold text-purple-400">15-30</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-6 border-t border-white/10">
+                             <p class="text-xs text-slate-400">Comisión: <span class="text-green-400 font-bold">Solo en Video $5k</span></p>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="metric-card rounded-3xl p-8 card-hover border border-blue-500/20 relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl group-hover:bg-blue-500/30 transition-all"></div>
-                    <div class="relative z-10">
-                        <div class="flex items-center justify-between mb-6">
-                            <div class="flex items-center space-x-3">
-                                <div class="w-12 h-12 bg-blue-500/20 rounded-2xl flex items-center justify-center">
-                                    <i data-lucide="home" class="w-6 h-6 text-blue-400"></i>
-                                </div>
-                                <div>
-                                    <h2 class="text-2xl font-bold">RealtyLab</h2>
-                                    <p class="text-sm text-slate-400">Producción Inmobiliaria</p>
-                                </div>
-                            </div>
-                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs font-semibold">FUERTE</span>
-                        </div>
-                        <div class="space-y-4">
-                            <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
-                                <span class="text-slate-300">Meta DMs Diarios</span>
-                                <span class="text-2xl font-bold text-blue-400">30-50</span>
-                            </div>
-                            <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
-                                <span class="text-slate-300">Leads Interesados</span>
-                                <span class="text-2xl font-bold text-blue-400">3-5</span>
-                            </div>
-                            <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
-                                <span class="text-slate-300">Citas Agendadas</span>
-                                <span class="text-2xl font-bold text-blue-400">1-3</span>
-                            </div>
-                        </div>
-                        <div class="mt-6 pt-6 border-t border-white/10">
-                            <div class="flex items-center justify-between text-sm">
-                                <span class="text-slate-400">Enfoque:</span>
-                                <div class="flex space-x-2">
-                                    <span class="px-2 py-1 bg-white/10 rounded text-xs">Video Pro</span>
-                                    <span class="px-2 py-1 bg-white/10 rounded text-xs">Dron</span>
-                                    <span class="px-2 py-1 bg-blue-500/30 rounded text-xs">IA</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <div class="metric-card rounded-3xl p-8 card-hover border border-blue-500/20 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl group-hover:bg-blue-500/30 transition-all"></div>
+                    <div class="relative z-10">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 bg-blue-500/20 rounded-2xl flex items-center justify-center">
+                                    <i data-lucide="home" class="w-6 h-6 text-blue-400"></i>
+                                </div>
+                                <div>
+                                    <h2 class="text-2xl font-bold">RealtyLab</h2>
+                                    <p class="text-sm text-slate-400">Producción Inmobiliaria</p>
+                                </div>
+                            </div>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs font-semibold">FUERTE</span>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
+                                <span class="text-slate-300">Meta DMs Diarios</span>
+                                <span class="text-2xl font-bold text-blue-400">30-50</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl">
+                                <span class="text-slate-300">Citas Agendadas</span>
+                                <span class="text-2xl font-bold text-blue-400">1-3</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-6 border-t border-white/10">
+                            <p class="text-xs text-slate-400">Comisión: <span class="text-green-400 font-bold">10% en TODO</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div class="glass-effect rounded-3xl p-8 border border-white/10">
-                <h3 class="text-2xl font-bold mb-6 flex items-center">
-                    <i data-lucide="target" class="w-6 h-6 mr-2 text-yellow-400"></i>
-                    Checklist Diario Obligatorio
-                </h3>
-                <div class="grid md:grid-cols-3 gap-4">
-                    <label class="checklist-item flex items-center p-4 bg-white/5 rounded-xl cursor-pointer hover:bg-white/10 transition-all">
-                        <input type="checkbox" class="w-5 h-5 rounded border-slate-600 text-purple-500 focus:ring-purple-500 bg-slate-800 mr-3">
-                        <div>
-                            <p class="font-semibold">15-30 Contactos Nuevos</p>
-                            <p class="text-xs text-slate-400">Amicabo: Restaurantes, bares, tours</p>
-                        </div>
-                    </label>
-                    <label class="checklist-item flex items-center p-4 bg-white/5 rounded-xl cursor-pointer hover:bg-white/10 transition-all">
-                        <input type="checkbox" class="w-5 h-5 rounded border-slate-600 text-blue-500 focus:ring-blue-500 bg-slate-800 mr-3">
-                        <div>
-                            <p class="font-semibold">30-50 DMs RealtyLab</p>
-                            <p class="text-xs text-slate-400">Agentes, desarrollos, constructoras</p>
-                        </div>
-                    </label>
-                    <label class="checklist-item flex items-center p-4 bg-white/5 rounded-xl cursor-pointer hover:bg-white/10 transition-all">
-                        <input type="checkbox" class="w-5 h-5 rounded border-slate-600 text-green-500 focus:ring-green-500 bg-slate-800 mr-3">
-                        <div>
-                            <p class="font-semibold">Reporte 7:30 PM</p>
-                            <p class="text-xs text-slate-400">Actualizar CRM + métricas</p>
-                        </div>
-                    </label>
-                </div>
-            </div>
-        </div>
+            <div class="glass-effect rounded-3xl p-8 border border-white/10">
+                <h3 class="text-2xl font-bold mb-6 flex items-center">
+                    <i data-lucide="target" class="w-6 h-6 mr-2 text-yellow-400"></i>
+                    Checklist Diario Obligatorio
+                </h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <label class="checklist-item flex items-center p-4 bg-white/5 rounded-xl cursor-pointer hover:bg-white/10 transition-all">
+                        <input type="checkbox" class="w-5 h-5 rounded border-slate-600 text-purple-500 focus:ring-purple-500 bg-slate-800 mr-3">
+                        <div>
+                            <p class="font-semibold">15-30 Contactos Nuevos</p>
+                            <p class="text-xs text-slate-400">Amicabo: Restaurantes, bares</p>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-center p-4 bg-white/5 rounded-xl cursor-pointer hover:bg-white/10 transition-all">
+                        <input type="checkbox" class="w-5 h-5 rounded border-slate-600 text-blue-500 focus:ring-blue-500 bg-slate-800 mr-3">
+                        <div>
+                            <p class="font-semibold">30-50 DMs RealtyLab</p>
+                            <p class="text-xs text-slate-400">Agentes, desarrollos</p>
+                        </div>
+                    </label>
+                    <label class="checklist-item flex items-center p-4 bg-white/5 rounded-xl cursor-pointer hover:bg-white/10 transition-all">
+                        <input type="checkbox" class="w-5 h-5 rounded border-slate-600 text-green-500 focus:ring-green-500 bg-slate-800 mr-3">
+                        <div>
+                            <p class="font-semibold">Reporte 7:30 PM</p>
+                            <p class="text-xs text-slate-400">Actualizar CRM + métricas</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
 
-        <div class="slide" id="slide-1">
-            <div class="mb-8">
-                <h2 class="text-4xl font-bold mb-2">Amicabo <span class="text-purple-400">Ventas</span></h2>
-                <p class="text-slate-400">Tu trabajo es AGENDAR, no cerrar. Meta: 3-5 citas diarias confirmadas.</p>
-            </div>
+        <div class="slide" id="slide-1">
+            <div class="mb-8">
+                <h2 class="text-4xl font-bold mb-2">Amicabo <span class="text-purple-400">Ventas</span></h2>
+                <p class="text-slate-400">Tu trabajo es AGENDAR, no cerrar. Meta: 3-5 citas diarias confirmadas.</p>
+            </div>
 
-            <div class="grid lg:grid-cols-3 gap-6 mb-8">
-                <div class="lg:col-span-2 space-y-4">
-                    <div class="glass-effect rounded-2xl p-6 border border-purple-500/30 card-hover">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">Starter</span>
-                                <h3 class="text-2xl font-bold mt-1">Video Puntual</h3>
-                            </div>
-                            <span class="text-3xl font-bold text-purple-400">$5,000</span>
-                        </div>
-                        <ul class="space-y-2 text-sm text-slate-300">
-                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-400"></i>Reel profesional</li>
-                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-400"></i>10,000 vistas garantizadas</li>
-                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-400"></i>Orgánico + pauta</li>
-                        </ul>
-                    </div>
+            <div class="grid lg:grid-cols-3 gap-6 mb-8">
+                <div class="lg:col-span-2 space-y-4">
+                    
+                    <div class="glass-effect rounded-2xl p-6 border border-purple-500/30 card-hover relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-green-500 text-xs font-bold text-white px-3 py-1 rounded-bl-lg z-10">
+                            GENERA 10% COMISIÓN
+                        </div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">Starter</span>
+                                <h3 class="text-2xl font-bold mt-1">Video Puntual</h3>
+                            </div>
+                            <span class="text-3xl font-bold text-purple-400">$5,000</span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-400"></i>Reel profesional</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-400"></i>10,000 vistas garantizadas</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-400"></i>Orgánico + pauta</li>
+                        </ul>
+                    </div>
 
-                    <div class="glass-effect rounded-2xl p-6 border border-purple-500/30 card-hover">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">Pro</span>
-                                <h3 class="text-2xl font-bold mt-1">Presencia Mensual</h3>
-                            </div>
-                            <span class="text-3xl font-bold text-purple-400">$10,000</span>
-                        </div>
-                        <ul class="space-y-2 text-sm text-slate-300">
-                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-400"></i>Aparición continua durante el mes</li>
-                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-400"></i>Integración en contenido regular</li>
-                        </ul>
-                    </div>
+                    <div class="glass-effect rounded-2xl p-6 border border-purple-500/30 card-hover relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-slate-700 text-xs font-bold text-slate-300 px-3 py-1 rounded-bl-lg z-10">
+                            NO COMISIONA
+                        </div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">Pro</span>
+                                <h3 class="text-2xl font-bold mt-1">Presencia Mensual</h3>
+                            </div>
+                            <span class="text-3xl font-bold text-purple-400">$10,000</span>
+                        </div>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-400"></i>Aparición continua durante el mes</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-400"></i>Integración en contenido regular</li>
+                        </ul>
+                    </div>
 
-                    <div class="gradient-bg rounded-2xl p-6 card-hover relative overflow-hidden">
-                        <div class="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
-                        <div class="relative z-10">
-                            <div class="flex justify-between items-start mb-4">
-                                <div>
-                                    <span class="text-xs font-bold text-white/80 uppercase tracking-wider">Enterprise</span>
-                                    <h3 class="text-2xl font-bold mt-1 text-white">Presencia Premium</h3>
-                                </div>
-                                <span class="text-3xl font-bold text-white">$50,000</span>
-                            </div>
-                            <ul class="space-y-2 text-sm text-white/90">
-                                <li class="flex items-center"><i data-lucide="crown" class="w-4 h-4 mr-2 text-yellow-300"></i>Campaña completa del mes</li>
-                                <li class="flex items-center"><i data-lucide="shield" class="w-4 h-4 mr-2 text-yellow-300"></i>Pago al finalizar (contrato)</li>
-                                <li class="flex items-center"><i data-lucide="star" class="w-4 h-4 mr-2 text-yellow-300"></i>Prioridad máxima</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                    <div class="gradient-bg rounded-2xl p-6 card-hover relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
+                        <div class="relative z-10">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <span class="text-xs font-bold text-white/80 uppercase tracking-wider">Enterprise</span>
+                                    <h3 class="text-2xl font-bold mt-1 text-white">Presencia Premium</h3>
+                                </div>
+                                <span class="text-3xl font-bold text-white">$50,000</span>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="glass-effect rounded-2xl p-6 border border-white/10">
-                    <h3 class="text-lg font-bold mb-4 flex items-center">
-                        <i data-lucide="users" class="w-5 h-5 mr-2 text-purple-400"></i>
-                        Prioridad de Prospectos
-                    </h3>
-                    <div class="space-y-3">
-                        <div class="flex items-center p-3 bg-white/5 rounded-lg border-l-4 border-red-500">
-                            <span class="font-medium">Restaurantes</span>
-                            <span class="ml-auto text-xs bg-red-500/20 text-red-300 px-2 py-1 rounded">Ticket Alto</span>
-                        </div>
-                        <div class="flex items-center p-3 bg-white/5 rounded-lg border-l-4 border-orange-500">
-                            <span class="font-medium">Bares/Antros</span>
-                            <span class="ml-auto text-xs bg-orange-500/20 text-orange-300 px-2 py-1 rounded">Hot</span>
-                        </div>
-                        <div class="flex items-center p-3 bg-white/5 rounded-lg border-l-4 border-yellow-500">
-                            <span class="font-medium">Tours/Experiencias</span>
-                        </div>
-                        <div class="flex items-center p-3 bg-white/5 rounded-lg border-l-4 border-green-500">
-                            <span class="font-medium">Clínicas/Escuelas</span>
-                        </div>
-                        <div class="flex items-center p-3 bg-white/5 rounded-lg border-l-4 border-blue-500">
-                            <span class="font-medium">Servicios Premium</span>
-                        </div>
-                    </div>
+                    <div class="p-4 bg-red-500/10 border border-red-500/20 rounded-xl flex items-start gap-3">
+                        <i data-lucide="alert-circle" class="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5"></i>
+                        <p class="text-sm text-slate-300">
+                            <span class="text-red-400 font-bold">IMPORTANTE:</span> En Amicabo, solo se genera comisión (10%) en la venta de videos independientes de $5,000. Los paquetes mensuales no comisionan.
+                        </p>
+                    </div>
+                </div>
 
-                    <div class="mt-6 p-4 bg-purple-500/10 rounded-xl border border-purple-500/20">
-                        <p class="text-sm text-purple-200 font-medium mb-2">⚡ Regla de Oro</p>
-                        <p class="text-xs text-slate-300">No explicar todo. No negociar. Siempre terminar con DOS horarios.</p>
-                    </div>
-                </div>
-            </div>
+                <div class="glass-effect rounded-2xl p-6 border border-white/10">
+                    <h3 class="text-lg font-bold mb-4 flex items-center">
+                        <i data-lucide="users" class="w-5 h-5 mr-2 text-purple-400"></i>
+                        Prioridad
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center p-3 bg-white/5 rounded-lg border-l-4 border-red-500">
+                            <span class="font-medium">Restaurantes</span>
+                            <span class="ml-auto text-xs bg-red-500/20 text-red-300 px-2 py-1 rounded">Ticket Alto</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-white/5 rounded-lg border-l-4 border-orange-500">
+                            <span class="font-medium">Bares/Antros</span>
+                            <span class="ml-auto text-xs bg-orange-500/20 text-orange-300 px-2 py-1 rounded">Hot</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-white/5 rounded-lg border-l-4 border-blue-500">
+                            <span class="font-medium">Servicios Premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <div class="glass-effect rounded-2xl p-8 border border-white/10">
-                <h3 class="text-xl font-bold mb-6 text-center">Las 3 Preguntas de Calificación (Siempre)</h3>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="text-center p-6 bg-white/5 rounded-2xl">
-                        <div class="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span class="text-2xl font-bold text-purple-400">1</span>
-                        </div>
-                        <p class="font-medium mb-2">¿Qué quieren lograr?</p>
-                        <p class="text-sm text-slate-400">¿Más clientes, reservas o posicionamiento?</p>
-                    </div>
-                    <div class="text-center p-6 bg-white/5 rounded-2xl">
-                        <div class="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span class="text-2xl font-bold text-purple-400">2</span>
-                        </div>
-                        <p class="font-medium mb-2">¿Qué empujar?</p>
-                        <p class="text-sm text-slate-400">¿Algo específico esta semana/mes?</p>
-                    </div>
-                    <div class="text-center p-6 bg-white/5 rounded-2xl">
-                        <div class="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span class="text-2xl font-bold text-purple-400">3</span>
-                        </div>
-                        <p class="font-medium mb-2">¿Quién decide?</p>
-                        <p class="text-sm text-slate-400">¿Cuándo puede 10-15 min?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="slide" id="slide-2">
+            <div class="mb-8">
+                <h2 class="text-4xl font-bold mb-2">RealtyLab <span class="text-blue-400">Inmobiliario</span></h2>
+                <p class="text-slate-400">Video pro + dron + IA.</p>
+            </div>
 
-        <div class="slide" id="slide-2">
-            <div class="mb-8">
-                <h2 class="text-4xl font-bold mb-2">RealtyLab <span class="text-blue-400">Inmobiliario</span></h2>
-                <p class="text-slate-400">Video pro + dron + IA. Mantener perfil activo y generar leads cualificados.</p>
-            </div>
+            <div class="mb-10">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-2xl font-bold text-blue-400 flex items-center">
+                        <i data-lucide="tag" class="w-6 h-6 mr-2"></i>
+                        Precios & Comisiones
+                    </h3>
+                    <span class="px-3 py-1 bg-green-500/20 text-green-400 border border-green-500/30 rounded-full text-xs font-bold whitespace-nowrap">10% DE COMISIÓN EN TODO</span>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="glass-effect rounded-2xl p-6 border border-blue-500/20 card-hover relative group">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-blue-500/10 rounded-full blur-2xl group-hover:bg-blue-500/20 transition-all"></div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="p-2 bg-blue-500/10 rounded-lg">
+                                <i data-lucide="camera" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <span class="text-sm font-bold text-green-400 bg-green-900/30 px-2 py-1 rounded">+$500 Comis.</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-1">Grabación Básica</h4>
+                        <p class="text-3xl font-bold text-white mb-2">$5,000</p>
+                        <p class="text-sm text-slate-400 mb-3">Cámara profesional y Drone. Poca IA.</p>
+                    </div>
 
-            <div class="grid lg:grid-cols-2 gap-8 mb-8">
-                <div class="space-y-4">
-                    <div class="glass-effect rounded-2xl p-6 border border-blue-500/20">
-                        <h3 class="text-lg font-bold mb-4 text-blue-400">Metas Diarias (Lun-Sab)</h3>
-                        <div class="space-y-4">
-                            <div>
-                                <div class="flex justify-between mb-1">
-                                    <span class="text-sm text-slate-300">DMs Enviados</span>
-                                    <span class="text-sm font-bold text-blue-400">30-50</span>
-                                </div>
-                                <div class="w-full bg-slate-800 rounded-full h-2">
-                                    <div class="bg-blue-500 h-2 rounded-full progress-bar" style="width: 0%" data-width="80%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between mb-1">
-                                    <span class="text-sm text-slate-300">Conversaciones Activas</span>
-                                    <span class="text-sm font-bold text-blue-400">10-15</span>
-                                </div>
-                                <div class="w-full bg-slate-800 rounded-full h-2">
-                                    <div class="bg-blue-500 h-2 rounded-full progress-bar" style="width: 0%" data-width="60%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between mb-1">
-                                    <span class="text-sm text-slate-300">Leads Interesados</span>
-                                    <span class="text-sm font-bold text-blue-400">3-5</span>
-                                </div>
-                                <div class="w-full bg-slate-800 rounded-full h-2">
-                                    <div class="bg-blue-500 h-2 rounded-full progress-bar" style="width: 0%" data-width="40%"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between mb-1">
-                                    <span class="text-sm text-slate-300">Citas Agendadas</span>
-                                    <span class="text-sm font-bold text-blue-400">1-3</span>
-                                </div>
-                                <div class="w-full bg-slate-800 rounded-full h-2">
-                                    <div class="bg-green-500 h-2 rounded-full progress-bar" style="width: 0%" data-width="25%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="glass-effect rounded-2xl p-6 border border-blue-500/20 card-hover relative group">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/20 transition-all"></div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="p-2 bg-purple-500/10 rounded-lg">
+                                <i data-lucide="sparkles" class="w-6 h-6 text-purple-400"></i>
+                            </div>
+                            <span class="text-sm font-bold text-green-400 bg-green-900/30 px-2 py-1 rounded">+$600 Comis.</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-1">Video IA (Sin Grabar)</h4>
+                        <p class="text-3xl font-bold text-white mb-2">$6,000</p>
+                        <p class="text-sm text-slate-400 mb-3">Narrados con IA. Usando material del cliente.</p>
+                    </div>
 
-                    <div class="glass-effect rounded-2xl p-6 border border-white/10">
-                        <h3 class="text-lg font-bold mb-4">A Quién Prospectar</h3>
-                        <div class="grid grid-cols-2 gap-3">
-                            <div class="p-3 bg-blue-500/10 rounded-lg text-center border border-blue-500/20">
-                                <i data-lucide="user" class="w-6 h-6 mx-auto mb-2 text-blue-400"></i>
-                                <p class="text-sm font-medium">Agentes</p>
-                            </div>
-                            <div class="p-3 bg-blue-500/10 rounded-lg text-center border border-blue-500/20">
-                                <i data-lucide="building" class="w-6 h-6 mx-auto mb-2 text-blue-400"></i>
-                                <p class="text-sm font-medium">Desarrollos</p>
-                            </div>
-                            <div class="p-3 bg-blue-500/10 rounded-lg text-center border border-blue-500/20">
-                                <i data-lucide="hard-hat" class="w-6 h-6 mx-auto mb-2 text-blue-400"></i>
-                                <p class="text-sm font-medium">Constructoras</p>
-                            </div>
-                            <div class="p-3 bg-blue-500/10 rounded-lg text-center border border-blue-500/20">
-                                <i data-lucide="key" class="w-6 h-6 mx-auto mb-2 text-blue-400"></i>
-                                <p class="text-sm font-medium">Administradores</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <div class="gradient-bg rounded-2xl p-6 card-hover relative overflow-hidden">
+                        <div class="flex justify-between items-start mb-4 relative z-10">
+                            <div class="p-2 bg-white/20 rounded-lg">
+                                <i data-lucide="clapperboard" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <span class="text-sm font-bold text-white bg-white/20 px-2 py-1 rounded">+$850 Comis.</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-1 text-white relative z-10">Full Service</h4>
+                        <p class="text-3xl font-bold text-white mb-2 relative z-10">$8,500</p>
+                        <p class="text-sm text-white/80 mb-3 relative z-10">Grabación (Foto/Video/Dron) + Narración IA.</p>
+                    </div>
+                </div>
+            </div>
 
-                <div class="glass-effect rounded-2xl p-6 border border-white/10">
-                    <h3 class="text-lg font-bold mb-6 flex items-center">
-                        <i data-lucide="calendar" class="w-5 h-5 mr-2 text-blue-400"></i>
-                        Plan de Contenido Semanal
-                    </h3>
-                    
-                    <div class="space-y-4">
-                        <div class="flex items-start space-x-4 p-4 bg-white/5 rounded-xl">
-                            <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="film" class="w-5 h-5 text-blue-400"></i>
-                            </div>
-                            <div>
-                                <p class="font-semibold">4-5 Reels/Semana</p>
-                                <p class="text-sm text-slate-400">Propiedades, before/after, dron, "venta rápida"</p>
-                            </div>
-                        </div>
+            <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                <div class="space-y-4">
+                    <div class="glass-effect rounded-2xl p-6 border border-blue-500/20">
+                        <h3 class="text-lg font-bold mb-4 text-blue-400">Metas Diarias</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm text-slate-300">DMs Enviados</span>
+                                    <span class="text-sm font-bold text-blue-400">30-50</span>
+                                </div>
+                                <div class="w-full bg-slate-800 rounded-full h-2">
+                                    <div class="bg-blue-500 h-2 rounded-full progress-bar" style="width: 0%" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-sm text-slate-300">Leads Interesados</span>
+                                    <span class="text-sm font-bold text-blue-400">3-5</span>
+                                </div>
+                                <div class="w-full bg-slate-800 rounded-full h-2">
+                                    <div class="bg-blue-500 h-2 rounded-full progress-bar" style="width: 0%" data-width="40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <div class="flex items-start space-x-4 p-4 bg-white/5 rounded-xl">
-                            <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="aperture" class="w-5 h-5 text-purple-400"></i>
-                            </div>
-                            <div>
-                                <p class="font-semibold">Stories Diario (6-10)</p>
-                                <p class="text-sm text-slate-400">Behind the scenes, clips, "DM para info"</p>
-                            </div>
-                        </div>
+                    <div class="glass-effect rounded-2xl p-6 border border-white/10">
+                        <h3 class="text-lg font-bold mb-4">A Quién Prospectar</h3>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="p-3 bg-blue-500/10 rounded-lg text-center border border-blue-500/20">
+                                <p class="text-sm font-medium">Agentes</p>
+                            </div>
+                            <div class="p-3 bg-blue-500/10 rounded-lg text-center border border-blue-500/20">
+                                <p class="text-sm font-medium">Desarrollos</p>
+                            </div>
+                            <div class="p-3 bg-blue-500/10 rounded-lg text-center border border-blue-500/20">
+                                <p class="text-sm font-medium">Constructoras</p>
+                            </div>
+                            <div class="p-3 bg-blue-500/10 rounded-lg text-center border border-blue-500/20">
+                                <p class="text-sm font-medium">Admin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <div class="flex items-start space-x-4 p-4 bg-white/5 rounded-xl">
-                            <div class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="layout-grid" class="w-5 h-5 text-green-400"></i>
-                            </div>
-                            <div>
-                                <p class="font-semibold">1 Carrusel/Semana</p>
-                                <p class="text-sm text-slate-400">"Checklist para vender más rápido"</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="glass-effect rounded-2xl p-6 border border-white/10">
+                    <h3 class="text-lg font-bold mb-6 flex items-center">
+                        <i data-lucide="calendar" class="w-5 h-5 mr-2 text-blue-400"></i>
+                        Contenido Semanal
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4 p-4 bg-white/5 rounded-xl">
+                            <i data-lucide="film" class="w-5 h-5 text-blue-400 mt-1"></i>
+                            <div>
+                                <p class="font-semibold">4-5 Reels/Semana</p>
+                                <p class="text-sm text-slate-400">Propiedades, before/after, dron</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 p-4 bg-white/5 rounded-xl">
+                            <i data-lucide="aperture" class="w-5 h-5 text-purple-400 mt-1"></i>
+                            <div>
+                                <p class="font-semibold">Stories Diario</p>
+                                <p class="text-sm text-slate-400">Behind the scenes, clips</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                    <div class="mt-6 p-4 bg-blue-500/10 rounded-xl border border-blue-500/20">
-                        <p class="text-sm font-medium text-blue-300 mb-2">Campañas esta semana:</p>
-                        <ul class="text-xs text-slate-300 space-y-1">
-                            <li>• 2 copies de anuncio (venta rápida / premium)</li>
-                            <li>• 1 link WhatsApp con mensaje prellenado</li>
-                            <li>• Segmentación: ubicación + intereses</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class="slide" id="slide-3">
+            <div class="mb-8">
+                <h2 class="text-4xl font-bold mb-2">Agenda <span class="text-green-400">Diaria</span></h2>
+            </div>
 
-        <div class="slide" id="slide-3">
-            <div class="mb-8">
-                <h2 class="text-4xl font-bold mb-2">Agenda <span class="text-green-400">Diaria</span></h2>
-                <p class="text-slate-400">Bloques de tiempo optimizados para máxima productividad</p>
-            </div>
+            <div class="grid lg:grid-cols-3 gap-6 mb-8">
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="glass-effect rounded-2xl p-6 border-l-4 border-purple-500 card-hover">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-purple-400 font-bold text-sm">09:00 - 11:30</span>
+                                <h3 class="text-xl font-bold mt-1">Amicabo Intensivo</h3>
+                                <p class="text-slate-400 text-sm mt-1">Llamadas + DMs + WhatsApp</p>
+                            </div>
+                            <i data-lucide="phone" class="w-6 h-6 text-purple-400"></i>
+                        </div>
+                    </div>
 
-            <div class="grid lg:grid-cols-3 gap-6 mb-8">
-                <div class="lg:col-span-2 space-y-4">
-                    <div class="glass-effect rounded-2xl p-6 border-l-4 border-purple-500 card-hover">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <span class="text-purple-400 font-bold text-sm">09:00 - 11:30</span>
-                                <h3 class="text-xl font-bold mt-1">Amicabo Intensivo</h3>
-                                <p class="text-slate-400 text-sm mt-1">Llamadas + DMs + WhatsApp</p>
-                            </div>
-                            <i data-lucide="phone" class="w-6 h-6 text-purple-400"></i>
-                        </div>
-                    </div>
+                    <div class="glass-effect rounded-2xl p-6 border-l-4 border-yellow-500 card-hover">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-yellow-400 font-bold text-sm">11:30 - 12:00</span>
+                                <h3 class="text-xl font-bold mt-1">CRM & Agenda</h3>
+                            </div>
+                            <i data-lucide="database" class="w-6 h-6 text-yellow-400"></i>
+                        </div>
+                    </div>
 
-                    <div class="glass-effect rounded-2xl p-6 border-l-4 border-yellow-500 card-hover">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <span class="text-yellow-400 font-bold text-sm">11:30 - 12:00</span>
-                                <h3 class="text-xl font-bold mt-1">CRM & Agenda</h3>
-                                <p class="text-slate-400 text-sm mt-1">Actualizar Sheet + confirmar citas</p>
-                            </div>
-                            <i data-lucide="database" class="w-6 h-6 text-yellow-400"></i>
-                        </div>
-                    </div>
+                    <div class="glass-effect rounded-2xl p-6 border-l-4 border-blue-500 card-hover">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-blue-400 font-bold text-sm">12:00 - 14:00</span>
+                                <h3 class="text-xl font-bold mt-1">RealtyLab Focus</h3>
+                                <p class="text-slate-400 text-sm mt-1">DMs + generación de leads</p>
+                            </div>
+                            <i data-lucide="home" class="w-6 h-6 text-blue-400"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-effect rounded-2xl p-6 border-l-4 border-slate-500 opacity-75">
+                         <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-slate-400 font-bold text-sm">14:00 - 16:00</span>
+                                <h3 class="text-xl font-bold mt-1">Comida / Break</h3>
+                            </div>
+                            <i data-lucide="coffee" class="w-6 h-6 text-slate-400"></i>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="glass-effect rounded-2xl p-6 border-l-4 border-blue-500 card-hover">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <span class="text-blue-400 font-bold text-sm">12:00 - 14:00</span>
-                                <h3 class="text-xl font-bold mt-1">RealtyLab Focus</h3>
-                                <p class="text-slate-400 text-sm mt-1">DMs + generación de leads</p>
-                         
+                <div class="glass-effect rounded-2xl p-6 border border-white/10">
+                    <h3 class="text-lg font-bold mb-4">Notas Rápidas</h3>
+                    <textarea class="w-full h-64 bg-slate-900/50 border border-white/10 rounded-xl p-4 text-sm text-slate-300 focus:outline-none focus:border-purple-500 transition-colors" placeholder="Escribe aquí notas de la llamada..."></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-4">
+            <div class="flex flex-col items-center justify-center h-96 text-center">
+                <div class="w-20 h-20 bg-white/5 rounded-full flex items-center justify-center mb-6 pulse-ring">
+                    <i data-lucide="message-square" class="w-10 h-10 text-slate-400"></i>
+                </div>
+                <h2 class="text-3xl font-bold mb-2">Scripts & Plantillas</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 w-full max-w-lg">
+                    <button class="p-4 bg-purple-500/10 border border-purple-500/20 rounded-xl hover:bg-purple-500/20 transition-all text-purple-300 font-medium">
+                        Amicabo (Venta)
+                    </button>
+                    <button class="p-4 bg-blue-500/10 border border-blue-500/20 rounded-xl hover:bg-blue-500/20 transition-all text-blue-300 font-medium">
+                        RealtyLab (Lead)
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        // Inicializar iconos
+        lucide.createIcons();
+
+        function showSlide(index) {
+            // Actualizar botones de navegación
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                if(btn.dataset.slide == index) {
+                    btn.classList.add('tab-active');
+                    btn.classList.add('bg-white/10');
+                } else {
+                    btn.classList.remove('tab-active');
+                    btn.classList.remove('bg-white/10');
+                }
+            });
+
+            // Actualizar slides visibles
+            document.querySelectorAll('.slide').forEach(slide => {
+                slide.classList.remove('active');
+            });
+            document.getElementById('slide-' + index).classList.add('active');
+
+            // Actualizar barras de progreso si es la slide de RealtyLab o Resumen
+            if (index === 2 || index === 0) {
+                setTimeout(() => {
+                    document.querySelectorAll('.progress-bar').forEach(bar => {
+                        bar.style.width = bar.dataset.width;
+                    });
+                }, 100);
+            }
+        }
+
+        // Cargar barras de progreso al iniciar
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.querySelectorAll('.progress-bar').forEach(bar => {
+                    bar.style.width = bar.dataset.width;
+                });
+            }, 500);
+        });
+    </script>
+</body>
+</html>
+
+```
